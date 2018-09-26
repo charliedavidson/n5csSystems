@@ -22,3 +22,9 @@ li a {
 li a:hover {
     background-color: #111;
 }
+
+#title {
+	font-family: Verdana;
+	font-color: black;
+	background-color: #b3e6ff
+}
