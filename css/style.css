@@ -29,3 +29,24 @@ li a:hover {
 	background-color: #b3e6ff;
 	font-size: 24px;
 }
+
+h1 {
+	font-family: Verdana;
+	font-color: black;
+	background-color: white;
+	font-size: 18px;
+}
+
+h2 {
+	font-family: Verdana;
+	font-color: black;
+	background-color: white;
+	font-size: 16px;
+}
+
+h3 {
+	font-family: Verdana;
+	font-color: black;
+	background-color: white;
+	font-size: 14px;
+}
