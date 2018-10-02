@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Insert title here : N5 Computer Systems Revision</title>
+		<title>Computer Structure : N5 Computer Systems Revision</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
 	
@@ -17,16 +17,123 @@
 			</ul>
 		</div>
 		
-		<!-- images: href="images/<https://www.google.co.uk/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj39PXrt-fdAhUjyYUKHY4AAQUQjRx6BAgBEAU&url=http%3A%2F%2Fwww.bbc.co.uk%2Fbitesize%2Fintermediate2%2Fcomputing%2Fcomputer_systems%2Fcomputer_structure%2Frevision%2F1%2F&psig=AOvVaw2LeJmNGaWh9ahEOMlvAvBp&ust=1538558673745125>"!-->
-		In computer engineering, computer architecture is a set of rules and methods that describe the functionality, organization, and implementation of computer systems. Some definitions of architecture define it as describing the capabilities and programming model of a computer but not a particular implementation.
+		<div id="title">
+			Computer Structure
+		</div>
+		
+		<p><b>By Charlie Davidson</b></p>
+		
+		<h1>On this page:</h1>
+		<div id="bulletlist">
+			<div id="bulletli" style="font-family:Verdana;"><a name="">Purposes</a></div>
+			<div id="bulletli" style="font-family:Verdana;"><a name="">The Processor</a></div>
+			<div id="bulletli" style="font-family:Verdana;"><a name="">Data and Address Buses</a></div>
+			<div id="bulletli" style="font-family:Verdana;"><a name="">Compilers and Interpreters</a></div>
+		</div>
+		
+		<h2>Purposes</h2>
+			<p>The purposes of the basic computer structure - the CPU, translators, and buses - allows for these three key components to work together.</p>
+			<p>In summary, the CPU carries out instructions; translators (either an interpreter or compiler) translate code into binary; and buses are used
+				to allow data to be transferred between RAM and the processor (ALU, Control Unit, and Registers). </p>
+				
+		<h2>The Processor</h2>
+			<p>The processor, also named CPU (Central Processing Unit) is the part of the computer system that manages and carries out instructions, in order to ensure that hardward and software respond as expected. CPUs are capable of handling millions of instructions per second.</p>
+			<p>For a working processor, it must be able to:</p>
+			<div id="bulletlist">
+				<div id="bulletli" style="font-size:14px;font-family:Verdana;"><a name="">Fetch, decode, then execute instructions from RAM</a></div>
+				<div id="bulletli" style="font-size:14px;font-family:Verdana;"><a name="">Perform logical operations and arithmetic calculations</a></div>
+				<div id="bulletli" style="font-size:14px;font-family:Verdana;"><a name="">Control read, write, clock, interrupt, and reset lines</a></div>
+			</div>
+			<h3>The ALU (Arithmetic Logic Unit)</h3>
+				<p>All calculations and logic decisions are handled by the ALU. For example, the processing of a real number is an example of an action carried out by the ALU.</p>
+				<p>Examples of ALU instructions would include:</p>
+				<p>> Performing calculations</p>
+				<p>> Performing comparisons on numerical values</p>
+				<p>> Making decisions based on logic, e.g. AND; OR; NOT</p>
+				
+			<h3>Registers</h3>
+				<p>Registers are temporary storage areas within the processor itself. It is responsible for the storage of addresses, data, or instructions.</p>
+			
+			<h3>Control Unit</h3>
+				<p>The control unit has the responsibility of managing the clock, read, write, reset, and interrupt lines.</p>
+				<p>The control unit has a clock line that sends out a signal to synchronise the fetch/execute cycle. In this instance, clock speed is measured in Hertz (Hz) and is a good indication of how quickly the processor can complete tasks.</p>
+				<p>The vast majority of computers in the modern day operate in GHz (1x10<sup>9</sup> Hz).</p>
+				<p>Read and Write lines are used to either read data from the RAM, or write data to the RAM.</p>
+				<p>The Reset line clears all registers while the interrupt line is used to handle interruptions to a process during execution.</p>
 
-A data bus is a system within a computer or device, consisting of a connector or set of wires, that provides transportation for data. Different kinds of data buses have evolved along with personal computers and other pieces of hardware
-
-An address bus is a computer bus architecture used to transfer data between devices that are identified by the hardware address of the physical memory (the physical address), which is stored in the form of binary numbers to enable the data bus to access memory storage.
-The address bus is used by the CPU or a direct memory access (DMA) enabled device to locate the physical address to communicate read/write commands. All address busses are read and written by the CPU or DMA in the form of bits.
-Machine code (MC) is the executable instruction code provided by all running computer system programs and applications. MC language is a low-level code interpreted and converted from high-level source code and understood only by the machine. Machine code is transported to the system processor when a specific task, application or program executes even the smallest process.
-Machine code is also known as machine language (ML).
-
-
+			<h3>Random Access Memory (RAM)</h3>
+				<p>When a program is running, the data that will be processed by the processor is temporarily stored in RAM. RAM will hold this data until it's needed by the processor.</p>
+				<p>When a program is closed, the data held in RAM is deleted.</p>
+				<p>When a system fully shuts down, RAM is cleared completely.</p>
+				<p>There are many different locations in RAM and each location has its own unique address. Each address has a unique value that is used by the address bus during the fetch/execute cycle. The more RAM that is available, the more programs it is possible to run concurrently (at the same time) without slowing system performance. New desktop PCs will usually have between 8GB and 16GB of RAM.</p>
+		
+		<br>
+		
+		<h2>Data and Address Buses</h2>
+			<p>Buses are used to allow communication to take place between the processor and RAM.</p>
+			<p>The <b>Address Bus</b> holds the address in RAM that the processor is accessing. It is <i>unidirectional</i>, meaning it can only be transmitted in one direction: from processor to RAM.</p>
+			<p>The <b>Data Bus</b> carries data between the processor and the memory. It is <i>bidirectional</i>, meaning it is possible to transfer data to and from the processor and memory.</p>
+			
+		<br>
+		
+		<h2>Translators: Compilers and Interpreters</h2>
+			<p>High level languages, such as Python, VB.Net, SQA Reference Language, and LiveCode all require translators to translate code created by programmers into machine code.</p>
+			<p>As the processor can only understand binary (0 and 1), translators ensure the code is executable in binary form, so it is able to be processed.</p>
+			<p>For example, the following code below can be translated into binary code, e.g:</p>
+			
+			<p style="background-color:#cccccc;font-family:Consolas;font-size:14px;">Dim webpage As String = "http://www.balweariehs.co.uk/"<br>
+			Dim webBrowser As Microsoft.WebBrowser = New Microsoft.WebBrowser<br>
+			webBrowser.Navigate(webpage)</p>
+			
+			<p>becomes...</p>
+			
+			<p style="background-color:#cccccc;font-family:Consolas;font-size:14px;">01000100 01101001 01101101 00100000 01110111 <br>
+			01100101 01100010 01110000 01100001 01100111 <br> 01100101 00100000 01000001 01110011 00100000 <br>
+			01010011 01110100 01110010 01101001 01101110 <br> 01100111 00100000 00111101 00100000 00100010 <br> 
+			01101000 01110100 01110100 01110000 00111010 <br> 00101111 00101111 01110111 01110111 01110111 <br>
+			00101110 01100010 01100001 01101100 01110111 <br> 01100101 01100001 01110010 01101001 01100101 <br> 
+			01101000 01110011 00101110 01100011 01101111 <br> 00101110 01110101 01101011 00101111 00100010 <br> 
+			00001101 00001010 01000100 01101001 01101101 <br> 00100000 01110111 01100101 01100010 01000010 <br>
+			01110010 01101111 01110111 01110011 01100101 <br> 01110010 00100000 01000001 01110011 00100000 <br> 
+			01001101 01101001 01100011 01110010 01101111 <br> 01110011 01101111 01100110 01110100 00101110 <br>
+			01010111 01100101 01100010 01000010 01110010 <br> 01101111 01110111 01110011 01100101 01110010 <br>
+			00100000 00111101 00100000 01001110 01100101 <br> 01110111 00100000 01001101 01101001 01100011 <br> 
+			01110010 01101111 01110011 01101111 01100110 <br> 01110100 00101110 01010111 01100101 01100010 <br> 
+			01000010 01110010 01101111 01110111 01110011 <br> 01100101 01110010 00001101 00001010 01110111 <br>
+			01100101 01100010 01000010 01110010 01101111 <br> 01110111 01110011 01100101 01110010 00101110 <br>
+			01001110 01100001 01110110 01101001 01100111 <br> 01100001 01110100 01100101 00101000 01110111 <br>
+			01100101 01100010 01110000 01100001 01100111 <br> 01100101 00101001 </p>
+			
+			<a style="font-family:Tahoma;font-size:10px;" href="http://www.unit-conversion.info/texttools/convert-text-to-binary/">Text to Binary Converter</a>
+			
+			<p>Translator software usually comes in the form of either a compiler of an interpreter.</p>
+			
+			<h3>Compiler</h3>
+				<p>Compilers translate source code into object code. Object code is held in a new file and does not require the use of translator software to run.</p>
+				<div id="bulletlist">
+					<div id="bulletli" style="font-size:14px;font-family:Verdana;"><a name="">Compilers are only held in RAM for the time it takes to translate source code into object code.</a></div>
+					<div id="bulletli" style="font-size:14px;font-family:Verdana;"><a name="">Compilers translate lines one after the other, however they are not executed immediately after translation.</a></div>
+					<div id="bulletli" style="font-size:14px;font-family:Verdana;"><a name="">If the object code contains errors, the program will crash or cause unexpected output. Programmers then must revisit source code - then identify and correct errors before recompiling the program once more.</a></div>
+				</div>
+			
+			<h3>Interpreter</h3>
+				<p>Interpreters translate source code directly into machine code. The translator runs throughout this translation and execution process.</p>
+				<div id="bulletlist">
+					<div id="bulletli" style="font-size:14px;font-family:Verdana;"><a name="">Each line of source code is translated into machine code, one at a time.</div>
+					<div id="bulletli" style="font-size:14px;font-family:Verdana;"><a name="">Each line of code is executed as soon as it's translated.</div>
+					<div id="bulletli" style="font-size:14px;font-family:Verdana;"><a name="">Interpreter will not translate the next line if it encounters an error - i.e. stops the execution.</div>
+					<div id="bulletli" style="font-size:14px;font-family:Verdana;"><a name="">User notified of the error immediately.</div>
+					<div id="bulletli" style="font-size:14px;font-family:Verdana;"><a name="">A useful tool to assist programmers as they attempt to identify and rectify errors.</div>
+					<div id="bulletli" style="font-size:14px;font-family:Verdana;"><a name="">Cannot determine the actual error but can indicate the line that was not translated into machine code.</div>
+				</div>
+				
+			<br>
+			
+			<h1>Want to test yourself?</h1>
+				<a style="font-family:Tahoma;font-size:16px;" href="https://www.bbc.com/bitesize/guides/zx78v9q/test">Test yourself here!</a>
+			
+			<br>
+			
+	<a style="font-family:Tahoma;font-size:10px;" href="https://www.bbc.com/bitesize/guides/zx78v9q/revision/1">Source: BBC Bitesize</a>
 	</body>
 </html>
